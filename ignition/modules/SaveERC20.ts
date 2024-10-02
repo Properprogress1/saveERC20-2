@@ -4,7 +4,7 @@ const tokenAddress = "0x80D9453de8c53e6F1F9e20b1dEcDf7568Ea0910F";
 
 const SaveERC20Module = buildModule("SaveERC20Module", (m) => {
 
-    const save = m.contract("SaveERC20", [tokenAddress]);
+const save = m.contract("SaveERC20", [tokenAddress]);
 
     return { save };
 });

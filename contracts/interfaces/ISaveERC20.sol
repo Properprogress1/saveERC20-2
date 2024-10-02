@@ -7,4 +7,6 @@ interface ISaveERC20 {
     function withdraw(uint256 _amount) external;
 
     function getContractBalance() external view returns(uint256);
+
+    function transferFunds(address _to, uint256 _amount) external;
 }

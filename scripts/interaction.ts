@@ -46,11 +46,18 @@ async function main() {
     "Contract balance after withdrawing:::",
     contractBalanceAfterDeposit
   );
+
+  // transfer funds
+  const receiver = "0x00000000";
+  const amountToSend = ethers.parseUnits("1", 18);
+
+  const tranfertTx = await Save
     
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
+
 main().catch((error) => {
     console.error(error);
     process.exitCode = 1;
